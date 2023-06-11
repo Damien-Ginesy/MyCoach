@@ -3,6 +3,7 @@ package com.example.mycoach;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ImageButton logoBtn = (ImageButton) findViewById(R.id.imageButton);
+        logoBtn.setImageResource(R.drawable.mycoach);
         logoBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

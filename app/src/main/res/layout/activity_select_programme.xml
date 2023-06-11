@@ -9,25 +9,28 @@
   <ImageView
       android:id="@+id/logoView"
       android:layout_width="0dp"
-      android:layout_height="wrap_content"
+      android:layout_height="0dp"
       android:layout_marginStart="24dp"
       android:layout_marginTop="27dp"
       android:layout_marginEnd="14dp"
       android:layout_marginBottom="576dp"
       android:contentDescription="@string/logoapp"
+      android:scaleType="fitCenter"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      tools:srcCompat="@tools:sample/avatars" />
+      app:srcCompat="@drawable/mycoach"
+      tools:srcCompat="@drawable/mycoach" />
 
   <Button
       android:id="@+id/btn_force"
-      android:layout_width="0dp"
+      android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginStart="161dp"
       android:layout_marginEnd="159dp"
       android:text="Force"
+      app:iconTint="#2196F3"
       app:layout_constraintBottom_toTopOf="@+id/btn_endurance"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
@@ -35,11 +38,12 @@
 
   <Button
       android:id="@+id/btn_endurance"
-      android:layout_width="0dp"
+      android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginStart="147dp"
       android:layout_marginEnd="148dp"
       android:text="Endurance"
+      app:iconTint="#2196F3"
       app:layout_constraintBottom_toTopOf="@+id/btn_cardio"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
@@ -47,11 +51,12 @@
 
   <Button
       android:id="@+id/btn_cardio"
-      android:layout_width="0dp"
+      android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginStart="159dp"
       android:layout_marginEnd="161dp"
       android:text="Cardio"
+      app:iconTint="#2196F3"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
